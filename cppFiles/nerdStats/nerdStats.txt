@@ -1,0 +1,42 @@
+Archive.cpp
+Lines: 303
+Words: 805
+Chars: 9288
+>>=: 0 <<=: 0 ||: 2 |=: 0 ^=: 0 >>: 0 >=: 1 ==: 5 <=: 0 <<: 38 /=: 0 //: 20 /*: 0 ->: 73 -=: 5 --: 0 +=: 16 ++: 4 *=: 0 */: 0 &=: 1 &&: 0 %=: 0 !=: 1 ~: 0 }: 40 |: 0 {: 40 ^: 0 >: 24 =: 36 <: 24 ;: 111 /: 4 .: 55 -: 7 ,: 64 +: 13 *: 28 ): 138 (: 138 &: 19 %: 0 #: 17 !: 2 ": 52 ': 20 
+if: 24 this: 21 printCtrl: 21 int: 20 root: 17 nFolderPtr: 15 :: 14 children: 13 static_cast: 13 FolderNode: 12 parent: 12 DEBUG_PRINT: 12 endl: 12 nFilePtr: 11 for: 11 stream: 11 printStr: 11 tmpString: 11 removeLocs: 11 child: 10 
+main.cpp
+Lines: 16
+Words: 39
+Chars: 397
+>>=: 0 <<=: 0 ||: 0 |=: 0 ^=: 0 >>: 0 >=: 0 ==: 0 <=: 0 <<: 0 /=: 0 //: 1 /*: 0 ->: 0 -=: 0 --: 0 +=: 0 ++: 0 *=: 0 */: 0 &=: 0 &&: 0 %=: 0 !=: 0 ~: 0 }: 1 |: 0 {: 1 ^: 0 >: 1 =: 1 <: 1 ;: 7 /: 5 .: 7 -: 0 ,: 0 +: 0 *: 0 ): 8 (: 8 &: 0 %: 0 #: 4 !: 0 ": 8 ': 0 
+test: 5 print: 3 int: 2 selection: 2 define: 1 DEFINE_VARIABLES: 1 include: 1 Archive: 1 h: 1 main: 1 ifdef: 1 PRINT_DEBUG_IN_FILE: 1 debugFile: 1 open: 1 debugMsg: 1 dbg: 1 endif: 1 FileSystemTree: 1 mnt: 1 246A0BEC6A0BB996: 1 
+utility.cpp
+Lines: 130
+Words: 334
+Chars: 3446
+>>=: 0 <<=: 0 ||: 1 |=: 0 ^=: 0 >>: 1 >=: 2 ==: 5 <=: 0 <<: 12 /=: 1 //: 6 /*: 0 ->: 0 -=: 0 --: 36 +=: 6 ++: 2 *=: 0 */: 0 &=: 0 &&: 2 %=: 0 !=: 1 ~: 0 }: 21 |: 2 {: 21 ^: 0 >: 4 =: 15 <: 6 ;: 60 /: 4 .: 26 -: 4 ,: 26 +: 5 *: 8 ): 63 (: 63 &: 6 %: 4 #: 2 !: 1 ": 30 ': 22 
+string: 13 return: 11 input: 11 0: 8 char: 8 int: 7 rhs: 7 selections: 7 size: 6 double: 5 d: 5 i: 5 const: 5 FancyString: 5 lhs: 5 in: 5 outSize: 5 ret: 5 cout: 5 convert: 4 
+Archive.h
+Lines: 105
+Words: 321
+Chars: 3198
+>>=: 0 <<=: 0 ||: 0 |=: 0 ^=: 0 >>: 0 >=: 0 ==: 4 <=: 0 <<: 9 /=: 0 //: 28 /*: 0 ->: 6 -=: 0 --: 0 +=: 0 ++: 0 *=: 0 */: 0 &=: 0 &&: 0 %=: 0 !=: 0 ~: 3 }: 15 |: 4 {: 15 ^: 0 >: 5 =: 27 <: 5 ;: 42 /: 2 .: 10 -: 2 ,: 33 +: 0 *: 10 ): 26 (: 26 &: 6 %: 0 #: 21 !: 0 ": 14 ': 0 
+1: 21 int: 15 define: 14 bool: 14 FileSystemNode: 14 :: 10 void: 9 string: 8 root: 7 true: 6 false: 6 this: 6 print: 6 class: 5 public:: 5 stream: 5 0: 4 id: 4 rhs: 4 FolderNode: 4 
+defines.h
+Lines: 80
+Words: 149
+Chars: 1543
+>>=: 0 <<=: 0 ||: 0 |=: 0 ^=: 0 >>: 0 >=: 0 ==: 0 <=: 0 <<: 0 /=: 0 //: 17 /*: 0 ->: 0 -=: 0 --: 53 +=: 0 ++: 6 *=: 0 */: 0 &=: 0 &&: 0 %=: 0 !=: 0 ~: 0 }: 1 |: 0 {: 1 ^: 0 >: 25 =: 2 <: 25 ;: 3 /: 8 .: 19 -: 3 ,: 0 +: 0 *: 0 ): 2 (: 2 &: 0 %: 0 #: 48 !: 0 ": 0 ': 0 
+include: 25 define: 13 h: 13 crypto: 5 endif: 4 Includes: 3 ifdef: 3 EXTERN: 3 _DEFINES_H_: 2 limits: 2 sys: 2 INITIALIZER: 2 else: 2 using: 2 namespace: 2 CryptoPP: 2 byte: 2 unsigned: 2 PRINT_DEBUG_MSG: 2 PRINT_DEBUG_IN_FILE: 2 
+utility.h
+Lines: 80
+Words: 194
+Chars: 2029
+>>=: 0 <<=: 0 ||: 0 |=: 0 ^=: 0 >>: 0 >=: 0 ==: 2 <=: 0 <<: 0 /=: 0 //: 10 /*: 0 ->: 0 -=: 0 --: 0 +=: 1 ++: 0 *=: 0 */: 0 &=: 0 &&: 0 %=: 0 !=: 0 ~: 0 }: 14 |: 0 {: 14 ^: 0 >: 3 =: 3 <: 3 ;: 24 /: 0 .: 7 -: 0 ,: 12 +: 1 *: 1 ): 26 (: 26 &: 6 %: 0 #: 19 !: 0 ": 34 ': 2 
+define: 13 FancyString: 13 struct: 12 EXTERN: 9 INITIALIZER: 9 const: 7 string: 6 T_RHS: 6 i_toBeRemoved: 6 operator: 4 typename: 4 T_LHS: 4 toBeRemoved: 4 element: 4 double: 3 int: 3 BOX_ICON_MID: 3 BOX_ICON_END: 3 BOX_ICON_PASS: 3 BOX_ICON_BLANK: 3 
+
+
+ ...................  Total ..........................
+Total #Lines: 714
+Total #Words: 1842
+Total #Chars: 19901

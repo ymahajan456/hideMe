@@ -45,3 +45,6 @@ gitCopy:
 	cp *.h ../gitFolder/cppFiles/
 	rm ../gitFolder/cppFiles/test*
 	cp Makefile ../gitFolder/cppFiles/
+
+nerdStats:
+	python3 ../pyFiles/nerdStats.py
