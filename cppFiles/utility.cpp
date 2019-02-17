@@ -47,3 +47,84 @@ struct FancyString operator+(FancyString lhs ,const FancyString & rhs)
 {
     return lhs += rhs;
 }
+
+
+string centreAligned(string in, int outSize, char fillChar)
+{
+    if(in.length() >= outSize)
+    {
+        return in.substr(0, outSize);
+    }
+    string ret((outSize - in.length())/2, fillChar);
+    ret += in;
+    ret += std::string(outSize - ret.length(), fillChar);
+    return ret;
+}
+
+// convert duplicate spaces to single spaces
+bool BothAreSpaces(char lhs, char rhs) { return (lhs == rhs) && (lhs == ' '); }
+
+void removeMultipleSpaces(string & input)
+{
+    std::string::iterator new_end = std::unique(input.begin(),input.end(), BothAreSpaces);
+    input.erase(new_end, input.end());
+}
+
+vector<int> terminalBasedSelector(const string message)
+{
+    vector<int> selections;
+    char *endPtr;
+    string input;
+    string section;
+    long convertedData;
+    char tmpChar;
+    cout << endl << "➡ " << message << ":" << endl << "⬅ ";
+    // ' ' is considered by default
+    // ------------------------------------
+    string additionalDelimeters = ".,;";
+    // ------------------------------------
+    while(true)
+    {
+        std::getline(std::cin, input);
+        for(int i = 0; i < additionalDelimeters.size(); i++)
+        {
+            std::replace(input.begin(), input.end(), additionalDelimeters[i], ' ');
+        }
+        removeMultipleSpaces(input);
+        // get the integers
+        std::stringstream inputStream(input);
+        while(std::getline(inputStream, section, ' '))
+        {
+            const char *charArray = section.c_str();
+            convertedData = std::strtol(charArray, &endPtr, 10);
+            if(!((endPtr == charArray) || (*endPtr != '\0')))
+            {
+                selections.push_back((int)convertedData);
+            }
+        }
+        // confirt the selection
+        cout << "➡ Selected entries are: ";
+        for(auto selection : selections)
+        {
+            cout << selection << ' ';
+        }
+
+        cout << "\n➡ Enter 'y' to confirm | 'n' to cancel | <anything else> to reenter: ";
+        std::cin >> tmpChar;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        if(tmpChar == 'y')
+        {
+            return selections;
+        }
+        else if(tmpChar == 'n')
+        {
+            selections.clear();
+            return selections;
+        }
+        else
+        {
+            selections.clear();
+            cout << "⬅ ";
+        }
+    }
+}

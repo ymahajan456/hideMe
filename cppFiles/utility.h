@@ -46,4 +46,35 @@ EXTERN struct FancyString FANCY_BLANK INITIALIZER({"", 0});
 EXTERN struct FancyString FOLDER_ICON INITIALIZER({"📂 ", 1});
 EXTERN struct FancyString FILE_ICON INITIALIZER({"📃 ", 1});
 
+string centreAligned(string in, int outSize, char fillChar = ' ');
+
+// terminal based selection
+vector<int> terminalBasedSelector(const string message = "Enter selections");
+
+
+template <typename T_LHS, typename T_RHS>
+struct Eraser
+{
+    Eraser(const T_RHS & toBeRemoved) : i_toBeRemoved(toBeRemoved){}
+    T_RHS i_toBeRemoved;
+    bool operator()(T_LHS & element) const
+    {
+        return element == i_toBeRemoved;
+    }
+};
+
+template <typename T_LHS, typename T_RHS>
+struct PointerEraser
+{
+    PointerEraser(const T_RHS & toBeRemoved) : i_toBeRemoved(toBeRemoved){}
+    T_RHS i_toBeRemoved;
+    bool operator()(T_LHS element) const
+    {
+        return (*element) == i_toBeRemoved;
+    }
+};
+
+
+
+
 #endif

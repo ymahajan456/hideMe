@@ -13,7 +13,7 @@
 // #include <stdlib.h>
 // #include <string>
 #include <vector>
-// #include <algorithm>
+#include <algorithm>
 // #include <limits>
 // #include <unordered_map>
 
@@ -40,6 +40,7 @@
 #include <sstream>
 #include <ctime>
 #include <limits>
+#include <ios>
 
 // Extern Variables Management
 #ifdef DEFINE_VARIABLES
@@ -70,9 +71,10 @@ namespace CryptoPP
 #endif
 
 #ifdef PRINT_DEBUG_IN_FILE
-    EXTERN ofstream myPrint;
+    #define DEBUG_PRINT debugFile
+    EXTERN ofstream debugFile;
 #else
-    #define myPrint std::cout
+    #define DEBUG_PRINT std::cout
 #endif
 
 #endif

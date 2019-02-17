@@ -22,9 +22,15 @@ main.o: main.cpp Archive.h defines.h utility.h
 main: main.o Archive.o utility.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-test: test.cpp
-	$(CXX) $(CXXFLAGS) -o test test.cpp
-	./test
+test_h.o: test_h.cpp utility.h defines.h test_h.h
+	$(CXX) $(CXXFLAGS) -c $<
+
+test.o: test.cpp defines.h utility.h test_h.h
+	$(CXX) $(CXXFLAGS) -c $<
+
+test: test.o test_h.o utility.o
+	$(CXX) $(CXXFLAGS) -o $@ $^
+	./$@
 
 clean:
 	rm -rf *.o main
@@ -33,3 +39,9 @@ cleanDebug:
 	rm *.dbg
 
 cleanall: clean cleanDebug
+
+gitCopy:
+	cp *.cpp ../gitFolder/cppFiles/
+	cp *.h ../gitFolder/cppFiles/
+	rm ../gitFolder/cppFiles/test*
+	cp Makefile ../gitFolder/cppFiles/
